@@ -8,6 +8,7 @@
   <title>Portofolio | Muh. Hafiz</title>
 
   <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
 </head>
 
 <body>
@@ -106,7 +107,7 @@
         <div class="card">
           <h3>Yang saya incar</h3>
           <p class="muted" style="margin:0">
-            Role yang relevan: <b>Junior Android Developer</b>, <b>Web Developer</b> dan <b>Data Analyst</b>            
+            Role yang relevan: <b>Junior Android Developer</b>, <b>Web Developer</b> dan <b>Data Analyst</b>
           </p>
         </div>
       </div>
@@ -152,8 +153,18 @@
               class="tag">KPI</span><span class="tag">Chart</span>
           </div>
           <div class="links">
-            <a class="link" href="#" target="_blank" rel="noreferrer">File</a>
-            <a class="link" href="#" target="_blank" rel="noreferrer">README</a>
+            <a class="link" href="https://1drv.ms/x/c/0f1575c4f38609da/IQB6b9c3gimDSpRXnG5sOuYVAZFp4sfHzXnylZghUxqAOWc"
+              target="_blank" rel="noreferrer">File</a>
+            <!-- <a class="link" href="#" target="_blank" rel="noreferrer">README</a> -->
+            <button class="link" onclick="openDashboard()">
+              Dashboard
+            </button>
+
+            <div id="popup" class="popup">
+              <span onclick="closeDashboard()">✕</span>
+
+              <img src="https://drive.google.com/thumbnail?id=1dpd6jihJ4vH4UAlarmaWUitLa4dp99_M&sz=w1000" alt="Dashboard">
+            </div>
           </div>
         </article>
 
@@ -222,7 +233,7 @@
             <span class="tag">Python</span><span class="tag">GraphQL API</span><span class="tag">Excel/Pivot</span>
           </div>
           <div class="links">
-            <a class="link" href="#" target="_blank" rel="noreferrer">Repo</a>            
+            <a class="link" href="#" target="_blank" rel="noreferrer">Repo</a>
           </div>
         </article>
 
@@ -350,4 +361,5 @@
     emailQuick.href = `mailto:${CONFIG.email}?subject=Kesempatan%20Kerja%20/%20Kolaborasi%20-%20${encodeURIComponent(CONFIG.fullName)}`;
   </script>
 </body>
+
 </html>
