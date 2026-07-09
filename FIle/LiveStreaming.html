@@ -1,0 +1,185 @@
+<section id="live-streaming-analysis" class="project-section">
+    <div class="container">
+
+        <div class="project-header">
+            <h2>📊 Live Streaming Sales Analytics Dashboard</h2>
+            <p>
+                Analisis performa penjualan live streaming menggunakan Microsoft Excel
+                dengan fokus pada Data Cleaning, Data Quality Assessment,
+                Business Validation, Exploratory Data Analysis (EDA),
+                dan Dashboard Reporting.
+            </p>
+        </div>
+
+        <div class="project-overview">
+            <h3>Project Overview</h3>
+            <p>
+                Proyek ini bertujuan untuk menganalisis performa penjualan melalui
+                live streaming dengan mengevaluasi kualitas data, performa kategori produk,
+                perilaku penonton, serta faktor-faktor yang memengaruhi pendapatan.
+            </p>
+
+            <div class="tech-stack">
+                <span>Excel</span>
+                <span>Pivot Table</span>
+                <span>Dashboard</span>
+                <span>Data Cleaning</span>
+                <span>EDA</span>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Dataset Information</h3>
+
+            <ul>
+                <li>1.500 sesi live streaming</li>
+                <li>11 atribut utama</li>
+                <li>Kategori: Elektronik, FMCG, Kosmetik, Pakaian, Aksesoris</li>
+                <li>Analisis berbasis Revenue, Viewer, Rating, dan Durasi Live</li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Data Quality Assessment</h3>
+
+            <table class="table-project">
+                <thead>
+                    <tr>
+                        <th>Permasalahan</th>
+                        <th>Jumlah</th>
+                        <th>Treatment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Missing Durasi_Menit</td>
+                        <td>150</td>
+                        <td>Median Imputation (96 menit)</td>
+                    </tr>
+                    <tr>
+                        <td>Missing Rating</td>
+                        <td>400</td>
+                        <td>Median Imputation (3.9)</td>
+                    </tr>
+                    <tr>
+                        <td>Rata_Penonton = 0</td>
+                        <td>250</td>
+                        <td>Imputasi berdasarkan rasio Peak Viewer</td>
+                    </tr>
+                    <tr>
+                        <td>Inkonsistensi Kategori</td>
+                        <td>9 Variasi</td>
+                        <td>Standardisasi Kategori</td>
+                    </tr>
+                    <tr>
+                        <td>Anomali Bisnis</td>
+                        <td>196</td>
+                        <td>Dikeluarkan dari analisis revenue</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="project-card">
+            <h3>Business Rule Validation</h3>
+
+            <ul>
+                <li>
+                    Validasi transaksi dengan Item_Terjual > 0 tetapi Pendapatan = 0
+                </li>
+                <li>
+                    Validasi data viewer yang tidak konsisten
+                </li>
+                <li>
+                    Validasi kategori produk yang tidak standar
+                </li>
+            </ul>
+        </div>
+
+        <div class="project-card">
+            <h3>Revenue Contribution by Category</h3>
+
+            <table class="table-project">
+                <thead>
+                    <tr>
+                        <th>Kategori</th>
+                        <th>Revenue</th>
+                        <th>Kontribusi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Elektronik</td>
+                        <td>Rp 21,20 Miliar</td>
+                        <td>78,2%</td>
+                    </tr>
+                    <tr>
+                        <td>Pakaian</td>
+                        <td>Rp 2,96 Miliar</td>
+                        <td>10,9%</td>
+                    </tr>
+                    <tr>
+                        <td>Kosmetik</td>
+                        <td>Rp 1,64 Miliar</td>
+                        <td>6,0%</td>
+                    </tr>
+                    <tr>
+                        <td>FMCG</td>
+                        <td>Rp 711 Juta</td>
+                        <td>2,6%</td>
+                    </tr>
+                    <tr>
+                        <td>Aksesoris</td>
+                        <td>Rp 597 Juta</td>
+                        <td>2,2%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="project-card">
+            <h3>Key Insights</h3>
+
+            <div class="insight-box">
+                <h4>📈 Elektronik Mendominasi Revenue</h4>
+                <p>
+                    Kategori Elektronik menghasilkan 78,2% total pendapatan
+                    meskipun jumlah item terjual lebih rendah dibanding FMCG,
+                    Kosmetik, dan Pakaian.
+                </p>
+            </div>
+
+            <div class="insight-box">
+                <h4>🛒 FMCG Memiliki Volume Penjualan Tinggi</h4>
+                <p>
+                    FMCG menjadi kategori dengan jumlah item terjual tertinggi,
+                    namun memiliki nilai transaksi per item yang relatif rendah.
+                </p>
+            </div>
+
+            <div class="insight-box">
+                <h4>📊 Data Quality Berpengaruh Terhadap Analisis</h4>
+                <p>
+                    Ditemukan 196 transaksi tidak valid yang berhasil
+                    diidentifikasi melalui Business Rule Validation.
+                </p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <h3>Skills Demonstrated</h3>
+
+            <div class="skills-grid">
+                <span>Data Cleaning</span>
+                <span>Data Validation</span>
+                <span>Pivot Table</span>
+                <span>Dashboard Development</span>
+                <span>Exploratory Data Analysis</span>
+                <span>Data Storytelling</span>
+                <span>Business Analysis</span>
+                <span>Reporting</span>
+            </div>
+        </div>
+
+    </div>
+</section>
